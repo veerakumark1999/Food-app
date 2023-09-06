@@ -184,6 +184,30 @@ exports.submitRecipeOnPost = async (req, res) => {
   }
 };
 
+// Update Recipe
+// async function updateRecipe() {
+//   try {
+//     const res = await Recipe.updateOne(
+//       { name: "Crab cakes" },
+//       { name: "CRAB CAKE" }
+//     );
+//     res.n;
+//     res.nModified;
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
+// updateRecipe();
+
+// Delete Recipe
+// async function deleteRecipe() {
+//   try {
+//     await Recipe.deleteOne({ name: "New Recipe Updated" });
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
+// deleteRecipe();
 // async function insertDummyCategoryData() {
 //   try {
 //     await Category.insertMany([
