@@ -33,7 +33,7 @@ exports.homepage = async (req, res) => {
 
     res.render("index", { title: "Food Blog - Home", categories, food });
   } catch (error) {
-    res.satus(500).send({ message: error.message || "Error Occured" });
+    res.status(500).send({ message: error.message || "Error Occured" });
   }
 };
 
@@ -188,8 +188,8 @@ exports.submitRecipeOnPost = async (req, res) => {
 // async function updateRecipe() {
 //   try {
 //     const res = await Recipe.updateOne(
-//       { name: "Crab cakes" },
-//       { name: "CRAB CAKE" }
+//       { name: "Sticky chicken drumsticks with mango couscous" },
+//       { name: " updated sticky chicken" }
 //     );
 //     res.n;
 //     res.nModified;
@@ -199,10 +199,12 @@ exports.submitRecipeOnPost = async (req, res) => {
 // }
 // updateRecipe();
 
-// Delete Recipe
+//Delete Recipe
 // async function deleteRecipe() {
 //   try {
-//     await Recipe.deleteOne({ name: "New Recipe Updated" });
+//     await Recipe.deleteOne({
+//       name: "Sticky chicken drumsticks with mango couscous",
+//     });
 //   } catch (error) {
 //     console.log(error);
 //   }
@@ -232,6 +234,7 @@ exports.submitRecipeOnPost = async (req, res) => {
 //         name: "Spanish",
 //         image: "spanish-food.jpg",
 //       },
+
 //     ]);
 //   } catch (error) {
 //     console.log("err", +error);
